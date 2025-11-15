@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: residentSys
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/residentSys
+    username: root
+    password: root
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+  mvc:
+    servlet:
+      path: /api/v1
+
+server:
+  error:
+    whitelabel:
+      enabled: false
+  port: 8080
